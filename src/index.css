@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Arial, "Helvetica Neue", Helvetica, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+}
+
+:root,
+body,
+button,
+input,
+textarea,
+select,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
+  font-family: Arial, "Helvetica Neue", Helvetica, "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+}

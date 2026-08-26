@@ -1,0 +1,6 @@
+{
+  "name": "Game UI Designer Portfolio",
+  "description": "A high-performance dark-themed Game UI/UX Designer portfolio featuring 4:3 project showcases, interactive game UI component inspector, and project detail modals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
