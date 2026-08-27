@@ -4,10 +4,10 @@ export const DESIGNER_PROFILE: DesignerProfile = {
   name: 'Grmina',
   role: 'Game UI / UX Designer',
   tagline: '게임의 세계관을 시각적 언어로 번역하고, 유저에게 몰입감 높은 플레이 경험을 설계합니다.',
-  bio: '5년 차 게임 UI/UX 디자이너로서 모바일 수집형 RPG, PC MMORPG, 캐주얼 서바이벌 등 다양한 장르의 상용화 프로젝트를 경험했습니다. 단순한 그래픽 작업을 넘어 유저 행동 데이터를 기반으로 정보 구조(IA)를 설계하고, Unity UGUI 및 언리얼 UMG 파이프라인을 직접 연동하여 최적화된 인터페이스를 완성합니다.',
+  bio: '13년 차 게임 UI/UX 디자이너로서 모바일 수집형 RPG, PC MMORPG, 캐주얼 서바이벌 등 다양한 장르의 상용화 프로젝트를 경험했습니다. 단순한 그래픽 작업을 넘어 유저 행동 데이터를 기반으로 정보 구조(IA)를 설계하고, Unity UGUI 및 언리얼 UMG 파이프라인을 직접 연동하여 최적화된 인터페이스를 완성합니다.',
   email: 'grmina@nm-fc.com',
   location: 'Seoul, Republic of Korea',
-  experienceYears: 5,
+  experienceYears: 13,
   socials: {
     github: 'https://github.com',
     linkedin: 'https://linkedin.com'

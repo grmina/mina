@@ -1,5 +1,5 @@
 import { ProjectItem } from '../types';
-import characterImg from '../assets/images/project1_exact_character_1787801083016.jpg';
+import characterImg from '../assets/images/project1_female_character_1787801358236.jpg';
 
 export const PROJECTS_DATA: ProjectItem[] = [
   {
