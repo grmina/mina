@@ -106,13 +106,13 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           </div>
 
           {/* Top Project Thumbnail Hero Banner */}
-          <div className="relative w-full aspect-[16/7] sm:aspect-[21/8] overflow-hidden bg-[#0d0d0f] border-b border-[#222] flex items-center justify-center">
+          <div className="relative w-full aspect-[16/7] sm:aspect-[21/8] overflow-hidden bg-[#0d0d0f] border-b border-[#222]">
             <img
               id="modal-thumbnail-image"
               src={project.thumbnail}
               alt={project.title}
               referrerPolicy="no-referrer"
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover object-top"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c] via-transparent to-black/30" />
             <div className="absolute bottom-3 left-6 flex items-center gap-2">

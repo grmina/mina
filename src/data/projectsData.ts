@@ -1,12 +1,12 @@
 import { ProjectItem } from '../types';
-import characterImg from '../assets/images/project1_female_character_1787801358236.jpg';
+import characterImg from '../assets/images/test1.png';
 
 export const PROJECTS_DATA: ProjectItem[] = [
   {
     id: 'project-1',
     number: 1,
-    title: 'Project 1: Chronicle Saga',
-    titleKo: '프로젝트 1: 크로니클 사가',
+    title: 'Project 1',
+    titleKo: '프로젝트 1',
     subtitle: 'Mobile RPG UI Renewal & Design System',
     subtitleKo: '모바일 RPG UI 리뉴얼 & 디자인 시스템 구축',
     category: 'mobile-rpg',

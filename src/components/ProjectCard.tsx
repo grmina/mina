@@ -25,13 +25,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       className="group relative flex flex-col bg-[#111] border border-[#222] hover:border-[#6366f1]/60 rounded-lg overflow-hidden cursor-pointer shadow-lg shadow-black/50 transition-all duration-200"
     >
       {/* Top 5:7 Image Wrapper with Exact Aspect Ratio Constraint */}
-      <div className="relative w-full aspect-[5/7] overflow-hidden bg-[#0d0d0f] border-b border-[#222] flex items-center justify-center">
+      <div className="relative w-full aspect-[5/7] overflow-hidden bg-[#0d0d0f] border-b border-[#222]">
         <img
           src={project.thumbnail}
           alt={project.title}
           referrerPolicy="no-referrer"
           loading="lazy"
-          className="w-full h-full object-contain block transition-transform duration-500 ease-out group-hover:scale-105"
+          className="w-full h-full object-cover object-top block transition-transform duration-500 ease-out group-hover:scale-105"
         />
 
         {/* Gradient Overlay for Readability */}
