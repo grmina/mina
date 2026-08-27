@@ -1,4 +1,5 @@
 import { ProjectItem } from '../types';
+import mokokoImg from '../assets/images/mokoko_project1_1787799053795.jpg';
 
 export const PROJECTS_DATA: ProjectItem[] = [
   {
@@ -10,8 +11,8 @@ export const PROJECTS_DATA: ProjectItem[] = [
     subtitleKo: '모바일 RPG UI 리뉴얼 & 디자인 시스템 구축',
     category: 'mobile-rpg',
     categoryName: '모바일 RPG UI 리뉴얼',
-    thumbnail: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000&auto=format&fit=crop',
-    detailImage: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1400&auto=format&fit=crop',
+    thumbnail: mokokoImg,
+    detailImage: mokokoImg,
     summary: '출시 3년 차 모바일 수집형 RPG의 노후화된 UI/UX 전면 개편. 정보 계층 구조를 단순화하고 모바일 한 손 조작성을 대폭 개선한 프로젝트입니다.',
     intent: '수많은 시스템이 추가되며 누적된 뎁스(Depth) 문제를 해소하고, 골드/보석 재화 흐름과 영웅 장비 육성 동선을 3터치 이내로 단축하여 사용자 피로도를 낮추는 것을 최우선 목표로 하였습니다.',
     problemSolution: {

@@ -10,8 +10,7 @@ interface ImageUploaderProps {
 }
 
 /**
- * Optimizes an uploaded image file using an offscreen canvas.
- * Resizes down to max 1400px width/height and compresses to JPEG/PNG data URL.
+ * Reads an uploaded image file preserving original bytes and dimensions.
  */
 export const optimizeAndReadFile = (file: File): Promise<string> => {
   return new Promise((resolve, reject) => {
@@ -23,38 +22,7 @@ export const optimizeAndReadFile = (file: File): Promise<string> => {
     const reader = new FileReader();
     reader.onload = (e) => {
       const result = e.target?.result as string;
-      const img = new Image();
-      img.onload = () => {
-        const maxWidth = 1400;
-        const maxHeight = 1050;
-        let width = img.width;
-        let height = img.height;
-
-        if (width > maxWidth || height > maxHeight) {
-          if (width / height > maxWidth / maxHeight) {
-            height = Math.round((height * maxWidth) / width);
-            width = maxWidth;
-          } else {
-            width = Math.round((width * maxHeight) / height);
-            height = maxHeight;
-          }
-        }
-
-        const canvas = document.createElement('canvas');
-        canvas.width = width;
-        canvas.height = height;
-        const ctx = canvas.getContext('2d');
-        if (ctx) {
-          ctx.drawImage(img, 0, 0, width, height);
-          const mimeType = file.type === 'image/png' ? 'image/png' : 'image/jpeg';
-          const dataUrl = canvas.toDataURL(mimeType, 0.9);
-          resolve(dataUrl);
-        } else {
-          resolve(result);
-        }
-      };
-      img.onerror = () => resolve(result);
-      img.src = result;
+      resolve(result);
     };
     reader.onerror = (err) => reject(err);
     reader.readAsDataURL(file);
