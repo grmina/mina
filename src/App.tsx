@@ -17,56 +17,13 @@ export default function App() {
   const [isAdminOpen, setIsAdminOpen] = useState(false);
   const [isEng, setIsEng] = useState(false);
 
-  // Projects State with LocalStorage Persistence
+  // Projects State
   const [projects, setProjects] = useState<ProjectItem[]>(() => {
-    try {
-      const saved = localStorage.getItem('nexus_portfolio_projects');
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          return parsed.map((p) => ({
-            ...p,
-            tags: Array.isArray(p.tags) ? p.tags : [],
-            colors: Array.isArray(p.colors) ? p.colors : [],
-            screens: Array.isArray(p.screens) ? p.screens : [],
-            specs: {
-              ...p.specs,
-              tools: (p.specs?.tools || []).filter(
-                (t: string) => !['figma', 'after effects', 'adobe after effects'].includes((t || '').toLowerCase().trim())
-              )
-            }
-          }));
-        }
-      }
-    } catch (e) {
-      console.warn('Could not load saved projects from localStorage, falling back to default data.', e);
-    }
     return PROJECTS_DATA;
   });
 
-  // Designer Profile with LocalStorage Persistence
+  // Designer Profile State
   const [designerProfile, setDesignerProfile] = useState<DesignerProfile>(() => {
-    try {
-      const saved = localStorage.getItem('nexus_designer_profile');
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        if (parsed && typeof parsed === 'object') {
-          return {
-            ...DESIGNER_PROFILE,
-            ...parsed,
-            skills: (parsed.skills || DESIGNER_PROFILE.skills || []).map((group: any) => ({
-              ...group,
-              items: (group.items || []).filter(
-                (item: any) => !['figma', 'after effects', 'adobe after effects'].includes((item.name || '').toLowerCase().trim())
-              )
-            })),
-            workExperience: parsed.workExperience || DESIGNER_PROFILE.workExperience || []
-          };
-        }
-      }
-    } catch (e) {
-      console.warn('Could not load saved designer profile, falling back to default.', e);
-    }
     return DESIGNER_PROFILE;
   });
 
