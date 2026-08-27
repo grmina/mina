@@ -55,8 +55,8 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     id: 'project-2',
     number: 2,
-    title: 'Project 2: Astellia Odyssey',
-    titleKo: '프로젝트 2: 아스텔리아 오디세이',
+    title: 'Project 2',
+    titleKo: '프로젝트2',
     subtitle: 'PC MMORPG HUD & System Windows',
     subtitleKo: 'PC MMORPG HUD 및 시스템 창 디자인',
     category: 'pc-mmorpg',

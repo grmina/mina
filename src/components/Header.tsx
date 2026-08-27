@@ -30,8 +30,8 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="text-[11px] text-[#555] font-mono uppercase tracking-widest">{designerProfile.location}</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl font-bold tracking-tighter leading-none text-white">
-            {isEng ? 'HONG GILDONG' : designerProfile.name}
+          <h1 className="text-4xl sm:text-6xl font-bold tracking-tighter leading-none text-white uppercase">
+            {designerProfile.name || 'Grmina'}
           </h1>
 
           <p className="text-[#6366f1] text-xs sm:text-sm font-bold tracking-[0.2em] mt-3 uppercase flex items-center gap-2">
